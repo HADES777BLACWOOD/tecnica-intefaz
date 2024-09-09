@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fondo fijo con desenfoque */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.hants.gov.uk/-/media/News/Hero-images/10102023RecycleWeekHe.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; /* Coloca el fondo detrás del contenido */
+    filter: blur(5px);
+}
+
+/* Contenedor principal */
+.contenedor {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    background: #EEF2DF; /* Color de fondo */
+}
+
+/* Navegación */
+nav {
+    width: 100%;
+    background-color: #46590D; /* Color oscuro para el fondo del nav */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 20%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.navegacion {
+    width: 65%;
+    float: left;
+}
+
+.ingreso {
+    width: 15%;
+    float: left;
+}
+
+/* Estilos para la lista de navegación */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #EEF2DF; /* Color claro para el texto */
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    transition: background 0.3s, border-bottom 0.3s;
+}
+
+nav ul li a:hover {
+    background: #000000; /* Fondo negro al hacer hover */
+    border-bottom: 2px solid #95D015; /* Subrayado verde al hacer hover */
+}
+
+/* Submenús */
+nav li ul {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    background-color: #95D015; /* Fondo verde para los submenús */
+    border-radius: 8px;
+    padding: 0;
+}
+
+nav li:hover ul {
+    display: block;
+}
+
+nav li ul li {
+    width: 180px;
+}
+
+nav li ul li a {
+    padding: 10px;
+    color: #000000; /* Color negro para el texto en los submenús */
+}
+
+/* Encabezado */
+header {
+    width: 100%;
+    height: 550px;
+    background-image: url(../img/pixelcut-export.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Títulos */
+.titulo {
+    width: 100%;
+    padding: 20px;
+    background-color: #000000; /* Fondo negro para los títulos */
+    color: #EEF2DF; /* Texto en color claro */
+    text-align: center;
+    font-size: 25px;
+    margin-top: 60px; /* Ajuste para margen superior */
+}
+
+/* Portafolio */
+main#portafolio {
+    width: 100%;
+    background: #EEF2DF; /* Color de fondo del portafolio */
+    padding: 40px 0;
+}
+
+.div-porta {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    color: #000000; /* Color negro para el texto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Fondo blanco para cada sección del portafolio */
+    border: 1px solid #95D015; /* Borde verde para cada sección del portafolio */
+}
+
+.div-porta img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+/* Sección "Quiénes somos" */
+section#quienes-somos {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.fila {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.col-ext, .col-cen {
+    padding: 20px;
+    box-sizing: border-box;
+    color: #EEF2DF; /* Texto claro */
+    border-radius: 8px;
+}
+
+.col-ext {
+    width: 48%;
+    background-color: #46590D; /* Fondo oscuro para las columnas externas */
+}
+
+.col-cen {
+    width: 48%;
+    background-color: #000000; /* Fondo negro para la columna central */
+}
+
+/* Sección "Contáctenos" */
+section#contactenos {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.div-contacto {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+.div-arr {
+    width: 100%;
+    height: 70%;
+}
+
+.div-arr iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.div-aba {
+    width: 100%;
+    height: 30%;
+    background: #46590D; /* Fondo oscuro para la sección de contacto */
+    text-align: center;
+    padding: 10px;
+    color: #EEF2DF; /* Texto claro en el fondo oscuro */
+}
+
+.direccion {
+    margin-top: 10px;
+}
+
+.facebook {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+/* Pie de página */
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #95D015; /* Fondo verde para el pie de página */
+    color: #000000; /* Texto negro en el fondo verde */
+    text-align: center;
+    line-height: 50px; /* Centra el texto verticalmente */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}

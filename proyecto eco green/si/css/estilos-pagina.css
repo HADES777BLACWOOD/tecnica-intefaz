@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Colores base */
+:root {
+    --background-color: #EEF2DF;
+    --primary-color: #46590D;
+    --secondary-color: #95D015;
+    --text-color: #000000;
+    --border-color: #46590D;
+}
+
+/* Clases especiales */
+.borde-izq {
+    border-radius: 10px 0 0 10px;
+}
+
+.borde-der {
+    border-radius: 0 10px 10px 0;
+}
+
+/* Contenedor */
+.contenedor {
+    width: 95%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Navegador con migas de pan */
+nav {
+    width: 100%;
+    padding: 10px 0;
+    margin: 15px 0;
+    border-bottom: 2px solid var(--primary-color); /* Verde oscuro */
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0 10px;
+    color: #666;
+    font-weight: 500;
+    font-size: 0.9em;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--secondary-color); /* Verde brillante */
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: var(--primary-color); /* Negro */
+}
+
+/* Imágenes */
+main img {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Formularios */
+.form-comp {
+    width: 90%;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
+}
+
+/* Columnas del formulario */
+.form-doble {
+    width: 50%;
+    background: var(--background-color); /* Crema */
+    border: 1px solid var(--border-color); /* Verde oscuro */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    width: 100%;
+}
+
+form .form-enc {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+form h1 {
+    text-align: center;
+    background: var(--background-color); 
+    padding: 10px;
+    color: var(--secondary-color); 
+}
+
+form .form-cuerpo {
+    width: 100%;
+    padding: 10px;
+}
+
+form label,
+form input {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+form label {
+    padding: 10px;
+    width: 40%;
+    text-align: right;
+    font-size: 0.9em;
+    color: var(--primary-color);
+}
+
+form input,
+form select {
+    padding: 10px 5px;
+    width: 55%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+}
+
+form .tipo-radio {
+    font-size: 0.8em;
+}
+
+form .tipo-radio label {
+    font-size: 1em;
+}
+
+form input[type="radio"] {
+    width: 5%;
+}
+
+form .form-pie {
+    width: 100%;
+    padding: 10px;
+    text-align: right;
+}
+
+form a {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    background: var(--secondary-color); 
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9em;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    border: 1px solid var(--border-color); 
+}
+
+form a:hover {
+    background: var(--primary-color); 
+}
+
+/* Estilos de Tablas */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+th {
+    background: var(--secondary-color); 
+    color: #fff;
+    font-weight: 600;
+    padding: 12px;
+}
+
+td,
+th {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+tr:nth-child(even) {
+    background-color: var(--background-color);
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}

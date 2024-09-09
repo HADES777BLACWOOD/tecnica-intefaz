@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Administrador</title>
+    <link rel="shortcut icon" href="../img/LOGO.png"> <!-- Icono de la página -->
+    <link rel="stylesheet" href="../css/estilos-admin.css"> <!-- Hoja de estilo -->
+</head>
+<body>
+    <div class="contenedor">
+        <!-- Navegador -->
+        <header>
+            <div class="logo">
+                <img src="../img/LOGO.png" alt="Logo empresa">
+            </div>
+            <nav class="navegacion">
+                <ul>
+                    <li><a href="#">Opción A</a>
+                        <ul>
+                            <li><a href="../../doc/pdf/mapa-navegacion.pdf" target="area-principal">Documentación A-1</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Opción B</a>
+                        <ul>
+                            <li><a href="#">Subopción B-1</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Opción C</a>
+                        <ul>
+                            <li><a href="#">Subopción C-1</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Administrador</a>
+                        <ul>
+                            <li><a href="../html/configura-perfil.html" target="area-principal">Configuración</a></li>
+                            <li><a href="../html/index.html">Salir</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <aside class="barra-lateral">
+                <div class="perfil">
+                    <img class="foto-admin" src="https://clipground.com/images/admin-logo-3.png" alt="Foto del administrador">
+                    <div class="info-perfil">
+                        <h1>Administrador</h1>
+                        <p>Nombre completo</p>
+                        <a href="../html/configura-perfil.html" target="area-principal">Configuración</a>
+                    </div>
+                </div>
+                <div class="modulos">
+                    <div class="modulo">
+                        <h3>Opción A</h3>
+                        <a href="../html/crear-usuarios.html" target="area-principal">Crear Usuario</a>
+                        <a href="../html/consultar-usuarios.html" target="area-principal">Consultar Usuarios</a>
+                    </div>
+                    <div class="modulo">
+                        <h3>Opción B</h3>
+                        <a href="#">Enlace 1</a>
+                        <a href="#">Enlace 2</a>
+                    </div>
+                    <div class="modulo">
+                        <h3>Opción C</h3>
+                        <a href="#">Enlace 1</a>
+                        <a href="#">Enlace 2</a>
+                    </div>
+                </div>
+            </aside>
+            <section class="contenido-principal">
+                <iframe name="area-principal" src="principal.html"></iframe>
+            </section>
+        </main>
+
+        <footer>
+            <ul>
+                <li><a href="../html/index.html">Salir</a></li>
+            </ul>
+            <p>&copy; 2024 Tu Empresa</p>
+        </footer>
+    </div>
+</body>
+</html>
